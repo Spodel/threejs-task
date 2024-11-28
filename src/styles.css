@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+#addObjectBtn {
+  background-color: rgb(20, 146, 47);
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.form-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: rgba(156, 146, 146, 0.7);
+  color: white;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  z-index: 10;
+}
+
+.form-container label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form-container select {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container select:hover {
+  border-color: #888;
+}
+
+.form-container select:focus {
+  outline: none;
+  border-color: #66afe9;
+}

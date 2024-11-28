@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Three.js Task</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Three.js task</h1>
-    <div id="controls">
+    <div class="form-container" id="controls">
       <label for="axisSelect">Ограничить движение по оси: </label>
       <select id="axisSelect">
         <option value="none">None</option>
@@ -16,7 +16,15 @@
         <option value="z">Z</option>
       </select>
     </div>
-    <button id="addObjectBtn">Добавить объект</button>
+    <div class="button-container">
+      <button id="addObjectBtn">Добавить объект</button>
+      <button id="toFront">Притянуть вперед</button>
+      <button id="toBack">Притянуть назад</button>
+      <button id="toLeft">Притянуть влево</button>
+      <button id="toRight">Притянуть вправо</button>
+      <button id="toTop">Притянуть вверх</button>
+      <button id="toBottom">Притянуть вниз</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
